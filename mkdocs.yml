@@ -1,3 +1,15 @@
 site_name: My Docs
+repo_name: Hehongyuanlove/wiki
+repo_url: https://github.com/Hehongyuanlove/wiki
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github-alt
+plugins:
+  - git-authors
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+  - git-committers:
+      repository: Hehongyuanlove/wiki
+      branch: main
