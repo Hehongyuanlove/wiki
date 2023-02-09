@@ -4,7 +4,7 @@ flarum Model 部分补充
 
 ##　模型关联
 
-```
+```PHP title='Goods.PHP'
     public function parent()
     {
         return $this->belongsTo(self::class, 'parent_id');
@@ -15,8 +15,8 @@ flarum Model 部分补充
 
 ## 模型内创建并关联事件
 
-```
-public static function start(User $actor, Array $goods)
+```PHP title='Goods.PHP'
+    public static function start(User $actor, Array $goods)
     {
         $goodsMod          = new self();
         $goodsMod->price = $goods['price'];
