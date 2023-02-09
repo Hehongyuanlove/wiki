@@ -10,4 +10,9 @@ plugins:
       enable_creation_date: true
       type: date
 markdown_extensions:
-   - codehilite
+  - codehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
