@@ -10,7 +10,8 @@ plugins:
       enable_creation_date: true
       type: date
 markdown_extensions:
-  - codehilite
+  - admonition  # 提示块
+  - pymdownx.details  # 提示块可折叠
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
