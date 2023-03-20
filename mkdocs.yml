@@ -5,6 +5,8 @@ theme:
   name: material
   icon:
     repo: fontawesome/brands/github-alt
+  features:
+    - content.code.copy # 代码复制
 plugins:
   - git-revision-date-localized:
       enable_creation_date: true
@@ -12,8 +14,7 @@ plugins:
 markdown_extensions:
   - admonition  # 提示块
   - pymdownx.details  # 提示块可折叠
-  - pymdownx.highlight:
-      anchor_linenums: true
+  - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
